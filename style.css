@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  background-color: #a5ebdc3d;
+}
+
+.container {
+  width: 100%;
+  /* height: 80vh; */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.card {
+  width: 300px;
+  height: 440px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgba(238, 211, 223, 0.808);
+}
+
+.card>*:not(img) {
+  padding: 5px 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-body {
+  padding: 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.card-body p {
+  color: #3d3d3d;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.view-btn a {
+  padding: 5px 15px;
+  border: 1.5px solid #007bff;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.btn-group {
+  display: flex;
+}
+
+.btn-group .btn a {
+  padding: 5px 15px;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 3px;
+  margin-left: -2px;
+}
+
+.btn-group a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.product__container {
+  display: flex;
+}
+
+.temp {
+  display: flex;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 15rem 0;
+  margin-right: 4rem;
+}
+
+.card {
+  min-width: 70%;
+  margin: auto;
+}
+
+.shadow {
+  box-shadow: 21px 31px 38px -7px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 21px 31px 38px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 21px 31px 38px -7px rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (min-width: 300px) and (max-width: 980px) {
+
+  .product__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: .5rem solid rgb(131, 184, 255); */
+  }
+
+  .temp {
+    flex-direction: column;
+    padding: 0;
+    max-width: 180%;
+    flex-wrap: wrap;
+  }
+
+  .container {
+    width: 100%;
+    /* margin-bottom: 2rem; */
+    margin: 3rem 0;
+
+  }
+}
+
+@media screen and (min-width:983px) and (max-width:1024px) {
+  .product__container {
+    max-width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .temp {
+    width: 60%;
+    max-width: 100%;
+    /* height: 100vh; */
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .container {
+    margin-bottom: 1rem;
+
+  }
+
+  .card {
+    max-width: 70%;
+  }
+}
